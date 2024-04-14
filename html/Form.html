@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="This is our study center" />
+
+    <title>Book Store</title>
+</head>
+
+<body>
+    <form action="" method="get" novalidate target="_blank">
+
+        <input type="hidden" value="Khaled">
+
+        <div>
+            <label>Username:</label>
+            <input type="text" required name="username" placeholder="Username" value="admin" readonly>
+        </div>
+
+        <br>
+
+        <div>
+            <label>Subject</label>
+            <input type="text" name="subject" autofocus>
+        </div>
+
+        <br>
+
+        <div>
+            <label>Password</label>
+            <input type="password" required placeholder="Write a complex password" name="password" minlength="8"
+                maxlength="20">
+        </div>
+
+        <br>
+
+        <!-- 
+            readonly => you cannot chagne the value and the data will be sent
+            disabled => you cannot change the value and the data will NOT be sent
+         -->
+
+        <div>
+            <label>Email</label>
+            <input type="email" required placeholder="Email" value="OldEmail@old.com" name="email" disabled>
+        </div>
+
+        <br>
+
+        <div>
+            <label>Color</label>
+            <input type="color" name="color">
+        </div>
+
+        <br>
+
+        <div>
+            <label>Range</label>
+            <input type="range" name="range" min="0" max="100" step="20" value="0">
+        </div>
+
+        <br>
+
+        <div>
+            <label>Number</label>
+            <input type="number" name="number" min="0" max="100" step="20" value="0">
+        </div>
+
+        <br>
+        <hr>
+
+        <!-- 
+            you can put the radios or checkboxs in a group using the (name) attribute,
+             the radios with the same name, you can choose only one of them,
+              but if there is another group with the different name,
+               you can choose one of the first group, and one of the second group. (the groups separate from each other)
+         -->
+
+        <!-- 
+            to link the Label with the Input, you should use (id) attribute in the input
+            and link it with the label using (for) attribute  in the label and put in it the same id of the input (case-sensitive)
+           -->
+
+        <div>
+            <input type="radio" name="os" id="win" checked>
+            <label for="win">Windows</label>
+        </div>
+        <div>
+            <input type="radio" name="os" id="lin">
+            <label for="lin">Linux</label>
+        </div>
+        <div>
+            <input type="radio" name="os" id="mac">
+            <label for="mac">Mac</label>
+        </div>
+
+        <hr>
+        <hr>
+
+        <div>
+            <input type="radio" name="gender" id="male" checked>
+            <label for="male">Male</label>
+        </div>
+        <div>
+            <input type="radio" name="gender" id="female">
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <input type="radio" name="gender" id="other">
+            <label for="other">Other</label>
+        </div>
+
+        <hr>
+        <hr>
+
+        <div>
+            <input type="checkbox" name="language" id="c++" checked>
+            <label for="c++">C++</label>
+        </div>
+        <div>
+            <input type="checkbox" name="language" id="c#">
+            <label for="c#">C#</label>
+        </div>
+        <div>
+            <input type="checkbox" name="language" id="java">
+            <label for="java">Java</label>
+        </div>
+        <br>
+
+        <div>
+            <label for="book"></label>
+            <select name="book" id="book">
+                <!-- if you want to select multiple options, you can use the (multiple) attribute -->
+                <optgroup label="Group 1">
+                    <option value="book1">Book1</option>
+                    <!-- the data that will send it is the value not the text, book1 not Book1 -->
+                    <option value="book2">Book2</option>
+                    <option value="book3">Book3</option>
+                </optgroup>
+
+                <optgroup label="Group 2">
+                    <option value="book4" selected>Book4</option>
+                    <option value="book5">Book5</option>
+                    <option value="book6">Book6</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <br>
+
+        <div>
+            <textarea name="subject" cols="90" rows="8" placeholder="Test Text"></textarea>
+        </div>
+
+        <br>
+
+        <div>
+            <label>Upload</label>
+            <input type="file" name="file">
+        </div>
+
+        <br>
+
+        <div>
+            <label>Search</label>
+            <input type="search" name="search">
+        </div>
+
+        <br>
+
+        <div>
+            <label>Url</label>
+            <input type="url" name="url">
+        </div>
+
+        <hr>
+
+
+        <!-- 
+            Note: When setting default values for <input type="date"> and <input type="month"> elements in HTML,
+                  ensure that the value attribute follows specific formats:
+            - For the date input type, the value must be in the format YYYY-MM-DD.
+            - For the month input type, the value must be in the format YYYY-MM.
+         -->
+
+        <div>
+            <label>Date</label>
+            <input type="date" name="date">
+        </div>
+
+        <br>
+
+        <div>
+            <label>DateTime</label>
+            <input type="datetime-local" name="datetime">
+        </div>
+        <br>
+        <div>
+            <label>Month</label>
+            <input type="month" name="month">
+        </div>
+
+        <br>
+        <div>
+            <label>Time</label>
+            <input type="time" name="time">
+        </div>
+
+        <hr>
+
+        <div>
+            <!-- 
+                the difference between (Select) and (Datalist) is:
+                 you can search of the item in the Datalist, but you cannot in the Select, 
+                 and in the Datalist you can type a new data and send it although it does not exist in the list,
+                  but in the Select you cannot do that, you must choose the items from the list 
+             -->
+            <label>Programming Languages</label>
+            <input list="programming" name="prog">
+            <datalist id="programming">
+                <option value="Python">
+                <option value="C++">
+                <option value="C">
+                <option value="C#">
+                <option value="Scala">
+            </datalist>
+        </div>
+
+        <hr>
+        <div>
+            <input type="submit" value="Save">
+            <input type="reset" name="reset">
+        </div>
+    </form>
+</body>
+
+</html>

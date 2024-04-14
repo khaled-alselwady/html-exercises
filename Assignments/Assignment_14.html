@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" target="_blank" novalidate>
+        <div>
+            <label for="search">Search</label>
+            <br>
+            <input type="search" name="search" id="search" placeholder="Enter A Search Word" autofocus>
+        </div>
+        <br>
+        <div>
+            <label for="file">Upload</label>
+            <br>
+            <input type="file" name="file" id="file">
+        </div>
+        <br>
+        <div>
+            <label for="url">URL</label>
+            <br>
+            <input type="url" name="url" id="url" required>
+        </div>
+
+        <br>
+
+        <!-- 
+            Note: When setting default values for <input type="date"> and <input type="month"> elements in HTML,
+                  ensure that the value attribute follows specific formats:
+            - For the date input type, the value must be in the format YYYY-MM-DD.
+            - For the month input type, the value must be in the format YYYY-MM.
+         -->
+
+        <div>
+            <label for="date">Date</label>
+            <input type="date" name="date" id="date" value="1982-10-25">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="month">Month</label>
+            <input type="month" name="month" id="month" value="1982-10">
+        </div>
+
+
+        <br>
+        <div>
+            <input type="reset" name="reset" id="reset" value="Empty">
+            <input type="submit" name="submin" id="submin" value="Save">
+        </div>
+    </form>
+
+</body>
+
+</html>

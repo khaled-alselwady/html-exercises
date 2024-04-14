@@ -1,0 +1,61 @@
+# Compiled Object files, Static and Dynamic libs (Shared Objects)
+*.o
+*.a
+*.so
+
+# Folders
+_obj
+_test
+
+# Architecture specific extensions/prefixes
+*.[568vq]
+[568vq].out
+
+*.cgo1.go
+*.cgo2.c
+_cgo_defun.c
+_cgo_gotypes.go
+_cgo_export.*
+
+_testmain.go
+
+# Executables
+*.exe
+
+# macOS hidden files
+.DS_Store
+
+# Visual Studio Code specific files
+.vscode/
+
+# Node.js specific files
+node_modules/
+npm-debug.log
+
+# Build artifacts
+dist/
+build/
+
+# Temporary files
+*.tmp
+
+# Images and media
+*.png
+*.jpeg
+*.jpg
+*.gif
+*.svg
+*.ico
+
+# Audio and video files
+*.mp3
+*.mp4
+
+# Photoshop files
+*.psd
+
+# Sass cache
+.sass-cache/
+
+# Cache directories
+.cache/

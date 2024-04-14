@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="This is our study center" />
+
+    <title>Book Store</title>
+</head>
+
+<body>
+    <h1>Book Store</h1>
+    <p>This is my <b>Book Store</b>, Welcome</p>
+
+    <!--
+            thead
+            tbody
+            tfoot
+            tr => Table Row
+            td => Table Data Cell
+            th => Table Header Cell
+            caption => The Title of the table
+            colspan => To merge more entity for columns
+            rowspan => To merge more entity for rows
+        -->
+
+    <!-- not recommanded to use `border` in html, we should use it in CSS -->
+    <table border="1">
+        <caption>Students Marks</caption>
+        <thead>
+            <tr>
+                <th>First</th>
+                <th>Last</th>
+                <th>Mark</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Khaled</td>
+                <td>Yousef</td>
+                <td>90</td>
+            </tr>
+
+            <tr>
+                <td>Ahmad</td>
+                <td>Yousef</td>
+                <td>95</td>
+            </tr>
+
+            <tr>
+                <td>Waleed</td>
+                <td>Yousef</td>
+                <td>85</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="2">Total Marks</td>
+                <td>270</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+</body>
+
+</html>
